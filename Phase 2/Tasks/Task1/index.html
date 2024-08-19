@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complex Number Operations</title>
+    </head>
+    <body>
+        <script>
+            // Define a complex number class
+            class Complex {
+                constructor(real, imaginary) {
+                    this.real = real;
+                    this.imaginary = imaginary;
+                }
+    
+                // Method to calculate the square root of a complex number
+                sqrt() {
+                    const r = Math.sqrt(this.real * this.real + this.imaginary * this.imaginary);
+                    const theta = Math.atan2(this.imaginary, this.real) / 2;
+                    return new Complex(Math.sqrt(r) * Math.cos(theta), Math.sqrt(r) * Math.sin(theta));
+                }
+    
+                // Method to display the complex number as a string
+                toString() {
+                    return `${this.real} + ${this.imaginary}i`;
+                }
+            }
+    
+            // Create a complex number
+            const z = new Complex(1, 2);
+    
+            // Calculate the square root of the complex number
+            const sqrt_z = z.sqrt();
+    
+            // Display the result
+            console.log(`The square root of ${z.toString()} is ${sqrt_z.toString()}`);
+        </script>
+    </body>
+    </html>
+    
+
+
+
+
+Function
+<script src="/Task1/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+*{
+    background-color: gray;
+}
+
+h1{
+    text-align: center;
+  
+}
+div{
+margin: 20px auto;
+padding: 60px;
+
+display: flex;
+flex-direction: column;
+}
